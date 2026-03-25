@@ -24,19 +24,13 @@ while intentos < 9 and famas < 3 :
     if z == C:
         famas +=1
     #validacion toques x
-    if x == B:
-        toques +=1
-    elif x == C:
+    if x == B or x == C:
         toques +=1
     #validacion toques Y
-    if y == A:
-        toques +=1
-    elif y == C:
+    if y == A or y == C:
         toques +=1
     #validacion toques z
-    if z == A:
-        toques +=1
-    elif z == B:
+    if z == A or z == B:
         toques +=1
     print("x  y  z famas y toques")
     print("=======================")
