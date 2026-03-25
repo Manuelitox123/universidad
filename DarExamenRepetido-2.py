@@ -21,4 +21,3 @@ while  Seguir == "S" :
 print("Cantida de alumnos que deben dar examen = ", Cont)
 print("FIN DEL PROCESO")
 input()
- 
