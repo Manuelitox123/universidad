@@ -37,4 +37,3 @@ while intentos < 9 and famas < 3 :
     print(x, "",y,"",z,"-",  famas,"------",  toques)
     print("--------------------------")
     print("intentos: ", intentos)
-    pt
