@@ -17,7 +17,7 @@ while intentos < 9 and famas < 3 :
     z = int(input("ingrese la tercera cifra "))
     print("-------------------")
     # validacion famas 
-    if x == A:
+    if x == A :
         famas += 1
     if  y == B :
         famas += 1
