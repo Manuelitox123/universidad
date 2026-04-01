@@ -1,11 +1,14 @@
 """promedio de edad y cantidad de personas."""
-s= "si" ; mujeres = 0 ; hombres = 0 ; edad_mujeres = 0 ; edad_hombres = 0 ; cantidad = 0 ; menores = 0 ; mayores = 0 
+s= "SI" ; mujeres = 0 ; hombres = 0 ; edad_mujeres = 0 ; edad_hombres = 0 ; cantidad = 0 ; menores = 0 ; mayores = 0 
 promedio_hombres=0; promedio_mujeres=0
-while s== "si":
+while s != "NO":
     print("------------------------------------------------------------")
     nommbre = input ("ingrese el nombre de la personas: ")
-    genero = input ("ingrese ewl genero de laa persona f/m: ")
+    genero = input ("ingrese el genero de laa persona F/M: ").upper()
     edad = int(input("ingrese la edad de la persona: "))
+    while edad < 0 or edad >120:
+        print("edad no disponible")
+        edad = int(input("ingresa una edad entre 0 y 120: "))
     cantidad += 1
     "gurdado de menores y mayores"
     if edad < 18 :
@@ -13,14 +16,14 @@ while s== "si":
     else :
         mayores += 1
     "guardado de edades por mujeres y hombres"
-    if genero == "m" or genero == "M" :
+    if genero == "M": 
         edad_hombres = edad_hombres + edad
         hombres += 1 
-    elif genero == "f" or genero == "F" :
+    elif genero == "F":
         edad_mujeres = edad_mujeres + edad
         mujeres += 1
     print()
-    s = input ("desea continuar si/no: ")
+    s = input ("desea continuar si/no: ").upper()
 "promedios"
 promedio_general= (edad_hombres+edad_mujeres) / cantidad
 if edad_hombres > 0 :
