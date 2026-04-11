@@ -27,7 +27,7 @@ while s == 0:
         if forma == "L":
             print ("##############################################")
             print ("Este es le monto a pagar:",tp,"por",l,"litros")
-        elif forma == m:
+        elif forma == " M":
             print("estos son los litros totales que llevara:", ltotales, "por", m)
         print("esta es la plata que llevas hasta ahora:", montot)
         print("este es optanaje mas vendido: ")

@@ -14,5 +14,5 @@ while usuario != n:
     intentos +=1
 #resultados
 print ("########################################")
-print ("usted a adivinado el numero felisidades.")
+print ("usted a adivinado el numero felicidades.")
 print("numero de intentos: ",intentos)
