@@ -16,4 +16,3 @@ print()
 print("cantidad de personas menores de edad: ", menor)
 print("el promedio de edad del grupo es: ", promedio)
 
-
