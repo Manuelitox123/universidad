@@ -1,11 +1,11 @@
 #progrmna de los robots 
 energiap= 500;energiao=500;import random; ty =0; tx=0;oliviay=15;oliviax=1;popeyey=15;popeyex=10;metay=1;metax=1;sw=1;sv=1;choque=0;sr=0
 tr = 0
-print("en este progrma dos robots comperitan por llegar a la meta y tu colocaras una trampa" \
+print("en este programa dos robots comperitan por llegar a la meta y tu colocaras una trampa" \
 "en algun lugar del mapa")
 ty= int(input("coloque en que fila esta la trampa: "))
 tx=int(input("coloque en que columna esta la trampa: "))
-while sv ==1:
+while (ty<1 or ty >15) or (tx<1 or tx >10) or (ty == 15 and tx == 1) or (ty == 15 and tx == 10):
 #verificacion de trampa
     while ty < 1 or ty >15:
         print ("solo puedes poner filas entre el 1 y el 15.")
@@ -13,20 +13,11 @@ while sv ==1:
     while tx < 1 or tx>10:
         print("solo puedes poner columnas entre 1 y 10.")
         tx=int(input("coloque en que columna esta la trampa: "))
-    while ty==15 and tx ==1 or ty==15 and tx ==10:
+    while (ty==15 and tx ==1) or (ty==15 and tx ==10):
         print("en ese lugar hay un robot no pudes poner una mina ahi.")
         ty= int(input("coloque en que fila esta la trampa: "))
         tx=int(input("coloque en que columna esta la trampa: "))
-    if ty!=15 or tx !=10:
-        tr +=1
-    if ty!=15 or tx !=1:
-        tr +=1
-    if ty >=1 and ty<=15:
-        sr+=1
-    if tx >=1 and tx<=10:
-        sr +=1
-    if sr == 2 and tr==2:
-        sv=2
+#fin de la verificacion
 while sw ==1:
 #moviemto olivia
     if energiao > 0:
